@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nerko+One&family=Playfair+Display:wght@500&family=Raleway&family=Roboto&display=swap');
+
+* {
+    border: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto';
+    flex-wrap: wrap;
+}
+/* Smartphone */
+@media (min-width: 320px) and (max-width:480px) {
+    header {
+        display: flex;
+        flex-direction: row;        
+    }
+    
+    /*menu de hamburguer*/
+    i#menuburger {
+        background-color: #9767a9;
+        color: white;
+        display: inline-block;
+        width: 65px;
+        height: 42px;
+        text-align: center;
+        padding-top: 13px;
+        font-size: 1.7rem;
+    }
+
+    i#menuburger:active {
+        background-color: white;
+        color: #9767a9;
+        display: inline-block;
+        width: 65px;
+        height: 40px;
+        text-align: center;
+        padding-top: 13px;
+        font-size: 1.7rem;
+    }
+
+    /*nav*/
+    #menu {
+        display: none;
+        width: 160px;
+        position: absolute;
+        top: 3rem;
+    }
+
+    ul {
+        background-color: #9767a9;         
+    }
+
+    li {
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        font-size: 18px;
+    }
+
+    li:hover {
+        background-color: #ac95bb;
+        color: white;
+        font-weight: bold;
+    }
+
+    a {
+        color: white;
+    }
+
+    #cgDesktop {
+        display: none;
+    }
+
+    /*logo header*/
+    .logo {
+        display: flex;  
+        width: 100vw;           
+    }
+
+    .logo img {
+        height: 2.5rem;
+        position: absolute;
+        top: 8px;
+        left: 160px;
+
+    }
+
+    /*barra de busca*/
+    #divBusca {
+        display: none;
+    }
+
+    /*div icons*/
+    #divIcons {
+        display: none;
+    }
+    /*Fim da header*/
+
+    /*section cabeludo*/
+    .secCbld {
+        background-image: url(cabeludo/cabeludo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30rem;
+    }
+
+    /* campo de texto da section*/
+    .secCbld div {
+        width: 70vw;
+        position: absolute;
+        top: 9rem;
+        left: 2rem;
+    }
+
+    .secCbld h1 {
+        font-family: 'Playfair';
+        font-size: 4rem;
+        color: white;
+    }
+
+    .secCbld h2 {
+        color: white;
+        font-family: 'Montserrat';
+        padding-top: 1rem;        
+    }
+
+    /*Section 7 passos*/
+    .secPassos {
+        background-color: #9767a9;
+        color: white;        
+        padding: 1rem 1.5rem 1rem 1.5rem;
+    }
+
+    .secPassos h2 {
+        font-family: 'Playfair';
+        font-size: 30px;
+    }
+
+}
