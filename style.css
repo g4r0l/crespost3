@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nerko+One&family=Playfair+Display:wght@500&family=Raleway&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nerko+One&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,900&family=Raleway&family=Roboto&display=swap');
 
 * {
     border: none;
@@ -13,7 +13,11 @@
 @media (min-width: 320px) and (max-width:480px) {
     header {
         display: flex;
-        flex-direction: row;        
+        flex-direction: row;   
+        position: fixed;
+        background-color: white;
+        z-index: auto;
+        background-size: cover;
     }
     
     /*menu de hamburguer*/
@@ -137,5 +141,46 @@
         font-family: 'Playfair';
         font-size: 30px;
     }
+
+    /*Passos img*/
+    .passos {
+        width: 100%;        
+    }
+
+    /*div passo 5*/
+    .divpasso5 {
+        position: relative;
+        top: -6rem;
+        background-color: #9767a9;
+        padding: 1rem 2rem 2rem 2rem;
+        z-index: auto;
+        margin-bottom: 2px;
+    }
+    
+    .divpasso7 {
+        position: relative;
+        top: 4rem;
+        background-color: #9767a9;
+        padding: 1rem 2rem 2rem 2rem;
+        z-index: auto;
+        margin-bottom: 2px;
+    }
+
+   /*título passos*/
+    .titpassos {
+        font-family: 'Playfair';         
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    /*texto passos*/
+    .txtpassos {
+        color: white;  
+        font-family: 'Montserrat';
+        font-weight: lighter;
+        letter-spacing: 5;
+    }
+
+    
 
 }
