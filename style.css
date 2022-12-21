@@ -9,6 +9,7 @@
     font-family: 'Roboto';
     flex-wrap: wrap;
 }
+
 /* Smartphone */
 @media (min-width: 320px) and (max-width:480px) {
     header {
@@ -16,7 +17,7 @@
         flex-direction: row;   
         position: fixed;
         background-color: white;
-        z-index: auto;
+        z-index: 3;
         background-size: cover;
     }
     
@@ -48,7 +49,7 @@
         display: none;
         width: 160px;
         position: absolute;
-        top: 3rem;
+        top: 3rem;        
     }
 
     ul {
@@ -115,13 +116,15 @@
         width: 70vw;
         position: absolute;
         top: 9rem;
-        left: 2rem;
+        left: 2rem; 
+        display: flex;
+        z-index: 1;
     }
 
-    .secCbld h1 {
+    .secCbld div h1 {
         font-family: 'Playfair';
         font-size: 4rem;
-        color: white;
+        color: white;          
     }
 
     .secCbld h2 {
@@ -144,29 +147,11 @@
 
     /*Passos img*/
     .passos {
-        width: 100%;        
+        width: 100%; 
+        margin-top: 1rem;       
     }
 
-    /*div passo 5*/
-    .divpasso5 {
-        position: relative;
-        top: -6rem;
-        background-color: #9767a9;
-        padding: 1rem 2rem 2rem 2rem;
-        z-index: auto;
-        margin-bottom: 2px;
-    }
-    
-    .divpasso7 {
-        position: relative;
-        top: 4rem;
-        background-color: #9767a9;
-        padding: 1rem 2rem 2rem 2rem;
-        z-index: auto;
-        margin-bottom: 2px;
-    }
-
-   /*título passos*/
+       /*título passos*/
     .titpassos {
         font-family: 'Playfair';         
         color: white;
@@ -181,6 +166,101 @@
         letter-spacing: 5;
     }
 
+    /*div passo 5*/
+    .divpasso5 {
+        position: relative;
+        top: -5.3rem;
+        background-color: #9767a9;
+        padding: 1rem 2rem 2rem 2rem;
+        z-index: auto;
+        
+    }
     
+    #passo6 {
+        position: relative;    
+        top: -4rem;
+        width: 100vw;
+    }
+ 
+    .divpasso7 {
+        position: relative;
+        top: -5.5rem;
+        background-color: #9767a9;
+        padding: 1rem 2rem 2rem 2rem;
+        margin-bottom: 2px;
+    }
+
+    #passo7 {
+        position: relative;
+        top: -3rem;
+        left: 2.7rem;
+    }
+
+    /*Divisória*/
+    #divisoria {
+        position: relative;
+        top: -4rem;
+        left: 33.3%;
+    }
+
+    /*Grid*/
+    .contnerGrid{
+        display: grid;
+        grid-template-areas: 
+        "foto1 foto1 foto2 foto3"
+        "foto1 foto1 foto4 foto4"
+        "gloria gloria gloria gloria"
+        "foto6 foto7 foto10 foto10"
+        "foto8 snoop foto10 foto10"
+        "eu eu eu eu";
+        gap: 10px;
+        grid-template-rows: 75px 137px 180px 147px 62px 271px;
+        grid-template-columns: 67px 68px 68px 68px;
+        position: relative;
+        left: 2.7rem;
+    }
+    .o-foto1 {
+        grid-area: foto1;
+    }
+
+    .o-foto2 {
+        grid-area: foto2;
+    }
+
+    .o-foto3 {
+        grid-area: foto3;
+    }
+
+    .o-foto4 {
+        grid-area: foto4;       
+    }
+    
+    .o-gloriamaria {
+        grid-area: gloria;
+    }
+
+    .o-foto6 {
+        grid-area: foto6;
+    }
+
+    .o-foto7 {
+        grid-area: foto7;
+    }
+
+    .o-foto8 {
+        grid-area: foto8;
+    }
+
+    .o-snoopdogg {
+        grid-area: snoop;
+    }
+
+    .o-foto10 {
+        grid-area: foto10;
+    }
+
+    .o-eu {
+        grid-area: eu;
+    }
 
 }
