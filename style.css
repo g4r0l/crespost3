@@ -216,7 +216,7 @@
         gap: 10px;
         grid-template-rows: 75px 137px 180px 147px 62px 271px;
         grid-template-columns: 67px 68px 68px 68px;
-        position: relative;
+        position: absolute;
         left: 2.7rem;
     }
     .o-foto1 {
@@ -263,4 +263,31 @@
         grid-area: eu;
     }
 
-}
+    /* footer */
+    footer {
+        position: absolute;
+        top: 875vh;
+        padding: 3rem;
+    }
+
+    #fb,#ig,#yt {
+        margin: 3px;
+        width: 3rem;        
+    }
+
+    #redes {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 1rem;
+    }
+
+    h4 {
+        font-weight: bold;
+    }
+
+    h5 {
+        text-align: justify;
+    }
+
+   }
